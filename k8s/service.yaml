@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: enterprise-system-20260517-210209-fzuclk0vhiu7-service
+spec:
+  selector:
+    app: enterprise-system-20260517-210209-fzuclk0vhiu7
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: ClusterIP
